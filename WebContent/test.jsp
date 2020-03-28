@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>This is my output file!!!</h1>
+	<%--CATCHING AN OBJECT FORM SERVLET BY JAVAEXPERSSION. --%>
+	<h1>hello my full name is <%= request.getAttribute("name") %></h1>
 </body>
 </html>
