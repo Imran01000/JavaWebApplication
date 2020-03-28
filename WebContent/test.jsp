@@ -8,6 +8,10 @@
 </head>
 <body>
 	<%--CATCHING AN OBJECT FORM SERVLET BY JAVAEXPERSSION. --%>
-	<h1>hello my full name is <%= request.getAttribute("name") %></h1>
+	<h1>hello my full name is 
+	<%
+		String fullname = request.getAttribute("name").toString();
+		out.println(fullname);
+	%></h1>
 </body>
 </html>
