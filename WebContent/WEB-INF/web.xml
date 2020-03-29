@@ -4,17 +4,15 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
 	<display-name>JspAndServlets</display-name>
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
 	
 	<servlet>
-		<servlet-name>FirstServlet</servlet-name>
-		<servlet-class>com.demopackage.FirstServlet</servlet-class>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.demopackage.LoginController</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>FirstServlet</servlet-name>
-		<url-pattern>/process</url-pattern>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login.beUser</url-pattern>
 	</servlet-mapping>
+	
 </web-app>
