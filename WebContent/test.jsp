@@ -7,11 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%--CATCHING AN OBJECT FORM SERVLET BY JAVAEXPERSSION. --%>
-	<h1>hello my full name is 
-	<%
-		String fullname = request.getAttribute("name").toString();
-		out.println(fullname);
-	%></h1>
+	<%--CATCHING AN OBJECT FORM SERVLET BY EL EXPRESSION. --%>
+	<h1>This is my fullname ${name}</h1>
+	<h2>my young brother full name is ${student.name }</h2>
 </body>
 </html>
